@@ -17,20 +17,20 @@ COMMANDS AND OPTIONS <p>
 
    Usage info is as follows:
 
-   Required:
-   -d : the directory where the programs are in. 
-   -i : the output of transcripts alignment with BLAT. SeePSL format
-   -j : the genome fragments fasta file which will be scaffolded and was used as the database when aligning proteins.
-   Optional:
-   -r : some fragments which you might be interesting and will not be scaffolded. The file has two columns per row. One row stand for that two fragments might be connected and should not be scaffolded. 
-   -l : the threshold of alignment length coverage (default:0.95). If one protein has a hit of which length coverage was over the threshold, then this protein would be filtered out.
-   -p : the threshold of alignment identity (default: 0.9). If one alignment has an identity over the threshold, then the alignment is kept for the further analysis.
-   -o : the directory where the output file is stored. The default output directory is equal to the program directory.
-   -e : The maximal intron length between two exons (default: 100kb). 
-   -f : the minimal number of supporting protein (default: 1). If the number of the supporting proteins for the connection is over the frequency, then this connection is reliable.
+   Required: <p>
+   -d : the directory where the programs are in. <p>
+   -i : the output of transcripts alignment with BLAT. <p>
+   -j : the genome fragments fasta file which will be scaffolded and was used as the database when aligning proteins. <p>
+   Optional: <p>
+   -r : some fragments which you might be interesting and will not be scaffolded. The file has two columns per row. One row stand for that two fragments might be connected and should not be scaffolded. <p>
+   -l : the threshold of alignment length coverage (default:0.95). If one protein has a hit of which length coverage was over the threshold, then this protein would be filtered out.<p>
+   -p : the threshold of alignment identity (default: 0.9). If one alignment has an identity over the threshold, then the alignment is kept for the further analysis. <p>
+   -o : the directory where the output file is stored. The default output directory is equal to the program directory. <p>
+   -e : The maximal intron length between two exons (default: 100kb). <p>
+   -f : the minimal number of supporting protein (default: 1). If the number of the supporting proteins for the connection is over the frequency, then this connection is reliable. <p>
 
-   Note: a typical PEP_scaffolder command might be:
-   sh PEP_scaffolder.sh -d ./ -i input.psl -j genome.fasta
+   Note: a typical PEP_scaffolder command might be: <p>
+   sh PEP_scaffolder.sh -d ./ -i input.psl -j genome.fasta <p>
 
 OUTPUT FILES <p>
    When PEP_scaffolder completes, it will create an PEP_scaffolder.fasta output file in the output_dir/ output directory. 
